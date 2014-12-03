@@ -4,12 +4,12 @@ import java.util.Random;
 import java.util.Set;
 
 /*
- * A simple application to use bloom filter to 
- * check whether an integer is in a member or not
+ * A simple application of bloom filter to 
+ * check whether an integer is a member or not
  */
 public class MyBloomFilter {
-	int size;
-	int hashCount;
+	private int size;         	// the bitset size
+	private int hashCount;		// the number of hash results
 	BitSet bitset;
 	
 	public MyBloomFilter(int length, int hashCount) {
